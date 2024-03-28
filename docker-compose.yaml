@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  zk-auth-server:
+    build: .
+    volumes:
+      - ./:/zk-auth-server
+    environment:
+      - USER=guido
+    container_name: zk-auth-server
